@@ -1,12 +1,14 @@
 from types import SimpleNamespace
 
-from utils.keyboard import create_keyboard
 
 keys = SimpleNamespace(
-    random_connect=":busts_in_silhouette: Random Connect",
-    settings = ":gear: Settings",
+    settings=":gear: Settings",
+    ask_question=":red_question_mark: Ask a Question",
+    cancel=":cross_mark: Cancel",
+    send_question=":check_mark_button: Send Question"
 )
 
-keyboards = SimpleNamespace(
-    main=create_keyboard(keys.random_connect, keys.settings)
+states = SimpleNamespace(
+    ask_question="Ask Question",
+    main='main'
 )
